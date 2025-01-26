@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Abdul.Inc</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script>
+     function showDiv(divId) {
+      var div = document.getElementById(divId);
+      if (div.style.display === "block") {
+       // div.style.display = "none";
+      }else{
+          // Hide all content divs
+          var divs = document.getElementsByClassName('content-div');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+            // Show the selected content div
+            document.getElementById(divId).style.display = 'block';
+           // var div = document.getElementById(divId);
+          // if (div.style.display === "none") {
+          //   div.style.display = "block";
+          // } else {
+          //   div.style.display = "none";
+          // }   
+      }
+            
+    }
+    function showskillDiv(divId){
+      var div = document.getElementById(divId);
+      if (div.style.display === "block") {
+        div.style.display = "none";
+      }else{
+        div.style.display = "block";
+      }
+
+    }
+    
+    function showdetailDiv(divId) {
+      var div = document.getElementById("detailview");
+      var detaildiv = document.getElementById(divId);
+      if (div.style.display === "block" && detaildiv.style.display === "block") {
+        //div.style.display = "none";
+      }else{  
+
+        var divs = document.getElementsByClassName('desc-div');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+
+         
+          detaildiv.style.display = "block";
+          div.style.display = "block";
+      }
+            
+    }
+</script>
+</head>
+<body>
+  <div class="pagecontainer">
+    <div class="left-column">
+        <div  class = "profilepic">
+          <img  src="assets/images/Mypic.png" alt="myphoto Icon" title="Abdul">
+        </div>             
+        <div class="info-container">
+          <div class="info-item">
+              <img src="assets/images/dob_icon.jpg" alt="DOB Icon" title="Date of Birth">
+              <span>Date of Birth : </span>20-July-1993
+          </div>
+          <div class="info-item">
+              <img src="assets/images/location_icon.jpg" alt="Location Icon" title="Location">
+              <span>Location : </span>Singapore
+          </div>
+          <div class="info-item">
+              <img src="assets/images/mail_icon.jpg" alt="Email Icon" title="Email">
+              <span>Email: </span> hadeeabdul07@gmail.com 
+          </div>
+          <div class="info-item">
+            <img src="assets/images/telephone.jpg" alt="telephone Icon">
+            <span>Contact Number:</span> +65 8498 2919
+        </div>
+        <div class="info-item">
+          <img src="assets/images/LinkedIN.jpg" alt="Email Icon">
+          <span>LinkedIN:</span><a href="https://www.linkedin.com/in/abdul-hadee-3065a865/">Abdul Hadee</a> 
+      </div>
+          <!-- Add more info items as needed -->
+      </div>
+    </div>
+    <div class="right-column">
+       <!--<div class="divcontainer">
+         <div><h2 class="box-heading"></h2></div>
+         <div style="font-size: 20px; font-weight: bolder;">About Me</div>
+         
+        
+        </div> -->
+        <div class="container">
+          <div class="menu" style="font-size: 15px;" onclick="showDiv('div1')" >
+            <img src="./assets/images/aboutme.jpg" style="width:30px;height:50px;"/>About Me</div>
+          <div class="menu" style="font-size: 15px;" onclick="showDiv('div2')" >
+            <img src="./assets/images/expr1.jpg" style="width:30px;height:50px;"/>MyService</div>
+          <div class="menu" style="font-size: 15px;" onclick="showDiv('div3')">
+            <img src="./assets/images/skill.jpg" style="width:30px;height:50px;"/>MySkills</div>
+          <div class="menu" style="font-size: 15px;" onclick="showDiv('div4')">
+            <img src="./assets/images/cert.jpg" style="width:30px;height:50px;"/>MyCertificates</div>
+        </div>
+
+        <div class="content-div" id="div1" style="display: none;">
+          <div class="Vcontainer">
+            <div>
+              <h1>About Me</h1>
+              <p class="myfont"> Accomplished Software Engineer with a decade of experience in the IT industry, proficient in all phases of the Software Development Life Cycle (SDLC).
+              </p> 
+              <ul>
+                <li><strong>Strong background in Java applications, .NET development, and project management</strong>. Skilled in driving <strong>software performance improvements</strong>, <strong>features improvement</strong>, enhancing <strong>team collaboration</strong>, and reducing <strong>development efforts</strong>.</li>
+                <li>Skilled in <strong>integrating new technologies</strong>, <strong>leading cross-functional teams</strong>, and delivering projects within <strong>deadlines</strong>. Experienced in working across the full <strong>application development life cycle</strong> using <strong>Agile/Scrum methodologies</strong>.</li>
+                <li>Designed and developed applications using <strong>Java, J2EE, Java Swing API, and .NET MVC</strong>, delivering robust and scalable solutions.</li>
+                <li><strong>Led and managed a team of three developers</strong>, fostering collaboration and ensuring timely delivery of high-quality software solutions.</li>
+                <li>Proficient in <strong>Agile methodology</strong> with experience in <strong>sprint planning, daily stand-ups, and sprint reviews</strong>, ensuring efficient project execution and timely delivery.</li>
+                <li>Wrote efficient, maintainable code from scratch with a strong focus on <strong>performance optimization</strong>.</li>
+                <li>Managed <strong>data migration efforts</strong>, assessing the impact of proposed changes and ensuring seamless integration without disrupting application performance.</li>
+                <li>Handled <strong>application defects</strong> reported by users, ensuring timely and effective resolution to maintain application stability.</li>
+                <li>Addressed <strong>incidents</strong> promptly and coordinated with cross-functional teams to ensure timely resolution, meeting <strong>Service Level Agreements (SLAs)</strong>.</li>
+                <li>Provided regular <strong>daily status updates</strong> to clients, addressing concerns and ensuring stakeholder satisfaction.</li>
+                <li>Managed <strong>bug tracking and resolution</strong>, performing comprehensive <strong>unit testing</strong> to ensure code quality and functionality.</li>
+                <li>Demonstrated strong <strong>work ethic</strong> and dedication to meeting project goals with consistency and perseverance.</li>
+                <li>Conducted <strong>knowledge transfer sessions</strong>, facilitating smooth onboarding of new team members and sharing critical project insights.</li>
+                <li>Created <strong>high-level and low-level design documents</strong> to communicate technical details clearly and effectively.</li>              
+              </ul> 
+           </div>
+          </div>
+        </div>
+       
+        <div class="content-div" id="div2" style="display: block;">
+            <div class="Vcontainer">
+              <div class="left scrollable-div">
+                <div class="menu"  onclick="showdetailDiv('ThalesDesc')" >
+                  <h3>Thales digital identity and security, Singapore</h3>
+                  <div style="font-size: 10px;">February 2020 — Present</div></div> </br>
+                <div class="menu" onclick="showdetailDiv('NUSDesc')" >
+                  <h3>Helius Technologies Pte Ltd, Singapore</h3>
+                  <div style="font-size: 10px;">
+                    (Client: National University of Singapore) </br>
+                    January 2019 — January 2020</div>
+                </div> </br>
+                <div class="menu" onclick="showdetailDiv('CTSDesc')" >
+                  <h3>Cognizant Technology Solutions , Chennai, India</h3>
+                  <div style="font-size: 10px;"> February 2015 — October 2018</div>
+                 </div></br>
+                </div>
+              <div class="right" id="detailview" style="display: block;">
+                <div class="scrollable-div desc-div"  id="ThalesDesc" style="display: block;">
+                  <div class="scrollable-content" id="description">
+                    <h2>Software Engineer at Thales Digital Identity and Security, Singapore</h2>
+                    <p><strong>February 2020 — Present</strong></p>
+                    <ul>
+                      <li>Involved in the full life cycle of application development using agile/scrum methodologies.</li>
+                      <li>Worked on developing and enhancing Java applications and Java Swing API.</li>
+                      <li>Developed unit testing for Java applications.</li>
+                      <li>Resolved server issues and coordinated with stakeholders.</li>
+                      <li>Provided customer support to remote clients using a support e-ticketing system for Java applications.</li>
+                      <li>Detected and resolved quality and security issues in code using Fortify and Sonar Lint.</li>
+                      <li>Possesses basic knowledge of APDU command.</li>
+                      <li>Responsible for migrating from ASP Classic to .NET MVC 5.</li>
+                      <li>Implemented web API in .NET MVC with security features.</li>
+                      <li>Enhanced legacy (ASP Classic) applications.</li>
+                      <li>Worked on database enhancements.</li>
+                      <li>Conducted workshops for new tool features and presented at EQR meetings for stakeholders.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                  <div class="scrollable-div desc-div"  id="NUSDesc" style="display: none;">
+                    <div class="scrollable-content" id="description">
+                      <h2>Full Stack Developer at Helius Technology Pte Ltd, Singapore</h2>
+                      <p><strong>January 2019 — January 2020</strong></p>
+                      <h3>Project 1: UGSPA</h3>
+                      <ul>
+                        <li><strong>Customer Name:</strong> National University Of Singapore(NUS)</li>
+                        <li><strong>Tools:</strong> Eclipse IDE, JBOSS, Maven, Tortoise SVN</li>
+                        <li><strong>Duration:</strong> 10 months (ongoing)</li>
+                        <li><strong>Project Responsibilities:</strong></li>
+                        <ul>
+                          <li>Implemented Spring Web-flow from Scratch.</li>
+                          <li>Built web pages using JSP, JSTL, JavaScript, and jQuery.</li>
+                          <li>Built Spring Web-flow XML files and implemented Java code.</li>
+                          <li>Migrated from jQuery 3.4.1.</li>
+                          <li>Migrated from Java 8 to openJDK 11 and JBOSS 7.2.2.</li>
+                          <li>Worked on changes in application configuration files.</li>
+                          <li>Involved in data issue fixes and user incident fixes.</li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+
+                    <div class="scrollable-div desc-div"  id="CTSDesc" style="display: none;">
+                      <div class="scrollable-content" id="description">
+                        <h2>Programmer Analyst at Cognizant, Chennai, India</h2>
+                        <p><strong>February 2015 — October 2018</strong></p>
+                        
+                        <h3>Project 1: Voya ITT App Remediation Finance</h3>
+                        <ul>
+                          <li><strong>Customer Name:</strong> Voya Financial</li>
+                          <li><strong>Tools:</strong> Eclipse IDE, JBOSS, Maven, Jenkins, Cara, WinSCP</li>
+                          <li><strong>Duration:</strong> 1 Year 3 months</li>
+                          <li><strong>Project Responsibilities:</strong></li>
+                          <ul>
+                            <li>Individual Module Contributor</li>
+                            <li>Implemented the Loosely coupled concept Using Spring Dependency Injection</li>
+                            <li>Implemented JSON Web Service using Spring framework</li>
+                            <li>Implemented Hibernate for Mapping and validation</li>
+                            <li>Migrating Oracle 6 Form application to Spring</li>
+                            <li>Migration of Code from Ant to Maven</li>
+                            <li>Working on Security Resiliency</li>
+                            <li>Involved in Data Issue fixes</li>
+                            <li>Working on Changes of Application Configurations files</li>
+                            <li>Handling Error</li>
+                          </ul>
+                        </ul>
+                      
+                        <h3>Project 2: CITIBANK-DevMgmt-PSFTJDE-Del</h3>
+                        <ul>
+                          <li><strong>Customer Name:</strong> CITIBANK</li>
+                          <li><strong>Tools:</strong> Eclipse IDE (Spring), SQL developer, Tomcat, Putty</li>
+                          <li><strong>Duration:</strong> 1 Year 2 months</li>
+                          <li><strong>Project Responsibilities:</strong></li>
+                          <ul>
+                            <li>Implemented the Loosely coupled concept Using Spring Dependency Injection</li>
+                            <li>Implemented Hibernate for Mapping and validation</li>
+                            <li>Implemented the concept Spring Security</li>
+                            <li>Enhancement for the functionalities and Testing</li>
+                            <li>Coordinate software release after bug fixes</li>
+                          </ul>
+                        </ul>
+                      
+                        <h3>Project 3: Prepaid Technologies-HSA Banking</h3>
+                        <ul>
+                          <li><strong>Customer Name:</strong> JP Morgan Chase</li>
+                          <li><strong>Tools:</strong> Eclipse IDE (Spring), SQL developer, Tomcat, Putty</li>
+                          <li><strong>Duration:</strong> 6 Months</li>
+                          <li><strong>Project Responsibilities:</strong></li>
+                          <ul>
+                            <li>Involved in the Enhancement of existing functionalities</li>
+                            <li>Implemented loosely coupled Interface Spring Dependency Injections</li>
+                            <li>Developed Swing-based desktop application</li>
+                            <li>Implemented Spring Security API</li>
+                            <li>Handling Priority Change Request and Incident</li>
+                            <li>Daily Status update and interaction with the client</li>
+                          </ul>
+                        </ul>
+                      
+                        <h3>Project 4: McDonald AM Steady State -Finance</h3>
+                        <ul>
+                          <li><strong>Customer Name:</strong> McDonald</li>
+                          <li><strong>Tools:</strong> Eclipse IDE (Struts), JBOSS, Maven, Putty</li>
+                          <li><strong>Duration:</strong> 6 months</li>
+                          <li><strong>Project Responsibilities:</strong></li>
+                          <ul>
+                            <li>Coordinate software release after bug fixes</li>
+                            <li>Enhancement for the existing functionalities</li>
+                            <li>Handling Priority Incident</li>
+                            <li>Processing the server file</li>
+                            <li>Monitoring the environment and server</li>
+                          </ul>
+                        </ul>
+                      
+                        <h3>Project 5: AZ DOA Enhancement</h3>
+                        <ul>
+                          <li><strong>Customer Name:</strong> AstraZeneca</li>
+                          <li><strong>Tools:</strong> Eclipse IDE, SQL developer, Service NOW</li>
+                          <li><strong>Duration:</strong> 6 Months</li>
+                          <li><strong>Project Responsibilities:</strong></li>
+                          <ul>
+                            <li>Involved in the development of the relational-database, used SQL and PL/SQL</li>
+                            <li>Involved in creating Stored Procedure and functions individually</li>
+                            <li>Optimizing the code</li>
+                            <li>Handling Change Request from Client</li>
+                            <li>Resolving incident and data issue</li>
+                            <li>Daily Update to the client</li>
+                          </ul>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+            </div>
+         </div>
+
+         <div class="content-div Vcontainer" id="div3" style="display: none;">
+            <h2>Skills</h2>
+              <button onclick="showskillDiv('javadiv')">Java/J2EE</button>
+                <button>C# .NET</button>
+                <button>Servlet</button>
+                <button>PL/SQL</button>
+                <button>JSP</button>
+                <button>JavaScript</button>
+                <button>Spring</button>
+                <button>.NET MVC</button>
+                <button>Hibernate</button>
+                <button>RESTful Service</button>
+                <button>JSON</button>
+                <button>XML</button>
+                <button>Basics of Executor Framework</button>
+                <button>Design Pattern</button>  
+                
+                <div id="javadiv" style="display: none;">
+                  <p>This is my java experience</p>
+                </div>
+        </div>
+
+        <div class="content-div" id="div4" style="display: none;">
+          <ul>
+            <li>Certified in Programming in C at NIIT.</li>
+            <li>Certified in Oracle Database 11g: SQL Fundamental at Oracle.</li>
+            <li>Certified in Spring And Hibernate Beginners at UDEMY.</li>
+            <li>Certified in C# Fundamental by Coding at UDEMY.</li>
+            <li>Certified in GIT and Source tree</li> 
+            <li>Certification in Cloud Computing - Ongoing</li>
+          </ul>
+        </div>
+     </div>
+
+
+
+  
+</body>
+</html>
