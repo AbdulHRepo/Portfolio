@@ -18,7 +18,7 @@ body {
   padding: 20px;
 }
 .left-column {
-  height: 750px;
+  /*height: 750px;*/
   flex: 0 0 10%; /* Width of the left column  f0f0f0*/
   background-color: whitesmoke;
   padding: 20px;
@@ -123,7 +123,6 @@ button:hover {
 }
 .profilepic img {
   width: 300px;
-  height: 500px;
   transition: transform 0.3s ease-in-out;
 }
 .profilepic:hover {
@@ -225,7 +224,7 @@ li {
   }
 
   .scrollable-div {
-   height: 700px;
+   /*height: 700px;*/
     overflow: auto; /* Add scrollbars when content overflows */
   }
 
