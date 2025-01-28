@@ -49,6 +49,12 @@ body {
 .Vcontainer {
   display: flex;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .left{
   flex: 0 0 25%;
@@ -219,7 +225,7 @@ li {
   }
 
   .scrollable-div {
-   height: 400px;
+   height: 700px;
     overflow: auto; /* Add scrollbars when content overflows */
   }
 
