@@ -201,13 +201,6 @@ li {
 
    /* Mobile-specific styles */
    @media screen and (max-width: 600px) {
-    .container {
-      display: flex;
-      flex-direction: row; /* Ensure they stay in a row */
-      justify-content: space-between; /* Space out the columns */
-      flex-wrap: wrap; /* Allow wrapping if necessary */
-    }
-  
     .box {
       width: 48%; /* Both columns will take up 48% of the container width */
       margin: 1%; /* Optional margin between the columns */
