@@ -203,10 +203,8 @@ li {
 
    /* Mobile-specific styles */
    @media screen and (max-width: 600px) {
-    
     .box {
-      height: 50vh; /* Make each box take up 50% of the screen height */
-      margin-bottom: 0; /* No bottom margin */
+      flex: 1 1 30%; /* No bottom margin */
     }
   }
 
