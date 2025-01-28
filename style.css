@@ -79,6 +79,7 @@ body {
 }
 .menu:hover {
   transform: scale(1.02); /* Enlarge on hover */
+  background-color: darkgrey;
 }
 button {
   background-color: #333;
