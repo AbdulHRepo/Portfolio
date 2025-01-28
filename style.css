@@ -237,7 +237,7 @@ li {
    /* Mobile-specific styles */
    @media screen and (max-width: 600px) {
     .box {
-      flex: 1 5 100%;  /* 100% width on small screens */
+      flex: 1 1 30%;  /* 100% width on small screens */
       margin: 5px 0;
     }
   }
