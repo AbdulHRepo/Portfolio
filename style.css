@@ -208,8 +208,10 @@ li {
    /* Mobile-specific styles */
    @media screen and (max-width: 600px) {
     .box {
-      width: 48%; /* Both columns will take up 48% of the container width */
-      margin: 1%; /* Optional margin between the columns */
+      width: 48%; /* Make each box take up 48% of the width */
+      margin: 1%; /* Optional: Add a small margin between the boxes */
+      display: inline-block; /* Make them sit side by side */
+      box-sizing: border-box; /* Ensure padding and margins don’t affect width */
     }
   }
 
