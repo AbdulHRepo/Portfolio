@@ -11,6 +11,12 @@ body {
   background-attachment: fixed;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .pagecontainer {
   display: flex;
   justify-content: space-between;
