@@ -204,7 +204,7 @@ li {
    /* Mobile-specific styles */
    @media screen and (max-width: 600px) {
     .box {
-      flex: 1 1 30%; /* No bottom margin */
+      flex: 1 1 45%; /* No bottom margin */
     }
   }
 
